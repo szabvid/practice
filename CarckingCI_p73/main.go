@@ -3,7 +3,7 @@
 
 package main
 
-func commonFinder(A []int, B []int) []int {
+func CommonFinder(A []int, B []int) []int {
 	var commons []int
 	a, b := 0, 0
 
