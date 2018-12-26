@@ -3,6 +3,25 @@
 
 package main
 
+func commonFinder(A []int, B []int) []int {
+	var commons []int
+	a, b := 0, 0
+
+	for a < len(A) && b < len(B) {
+		if A[a] == B[b] {
+			commons = append(commons, A[a])
+			a++
+			b++
+		} else if A[a] > B[b] {
+			b++
+		} else if A[a] < B[b] {
+			a++
+		}
+	}
+
+	return commons
+}
+
 func main() {
 
 }
